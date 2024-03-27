@@ -1,0 +1,563 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --amarillo: #eac926;
+    --azul: #03264c;
+    --celeste: #1259c3;
+    --grisoscuro: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+body {
+    background-color: var(--grisclaro);
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: var(--amarillo);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+main {
+    background-color: var(--grisclaro);
+    margin: auto;
+    width: 90vw;
+    max-width: 1200px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--grisoscuro);
+    max-width: 500px;
+    text-align: left;
+    margin: auto;
+    padding: 15px 15px 5px 15px;
+}
+
+h3 {
+    font-size: 24px;
+    color: var(--grisoscuro);
+    margin-top: 2%;
+    margin-bottom: 1%
+}
+
+h4 {
+    font-weight: normal;
+    display: none;
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+article {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+article:hover h4 {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 3px 0 3px 10px;
+}
+
+/* ----------- Elementos de productos ------------ */
+
+.descrip {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.discount {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.price {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    width: 30%;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+}
+
+/* ------- Fin Elementos de Productos -------------*/
+
+/* --------------- Header --------------------*/
+
+.header-bar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px
+}
+
+.a-logo {
+    text-decoration: none;
+    width: 50%;
+    max-width: 173px;
+}
+
+.logo {
+    /*width: 50%;*/
+    padding: 5px;
+    max-width: 173px;
+}
+
+img {
+    width: 100%
+}
+
+.motto {
+    text-align: center;
+    font-weight: 450;
+    padding: 2px;
+}
+
+.nav-bar {
+    width: 65%;
+    padding: 5px
+}
+
+.search-box {
+    border-radius: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    padding: 1px 10px 1px 5px;
+    border-right: var(--grisclaro) 1px;
+}
+
+/* ------------------- Nav-bar ------------------ */
+
+.main-nav-bar {
+    display: none;
+}
+
+.burger {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+    background-color: var(--celeste);
+    color: white;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* --------------- Fin de Nav-bar --------------- */
+
+/* ----------- Fin de Header -------------------- */
+
+
+/* -------------- Main Productos ---------------- */
+
+.products-lastseen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products-offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    border-top: 1px solid var(--grisclaro);
+    padding: 5px;
+    position: relative;
+    background-color: white;
+}
+
+.icons {
+    border: 1px solid var(--verde);
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--verde);
+    font-size: 16px;
+    display: block;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 450ms;
+}
+
+.icons:hover {
+    transform: rotateZ(-90deg);
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: flex-start;
+}
+
+.discount {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--verde);
+    width: 70%;
+}
+
+/* ------------ Fin de Main Productos ----------- */
+
+/* ------------------- Footer ------------------- */
+
+footer {
+    background-color: white;
+}
+
+.footer-sections {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-sections i {
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.footer-sections i:hover {
+    color: var(--azul);
+}
+
+.footer-section {
+    text-align: center;
+    padding: 5px 30px;
+    margin-bottom: 15px;
+}
+
+footer h2 {
+    margin-bottom: -0.75rem;
+}
+
+.copyright {
+    text-align: left !important;
+}
+
+/* ----------------- Fin de Footer -------------- */
+
+/* ------------ Formulario Register ------------- */
+
+.title-reg {
+    font-size: 24px;
+    color: var(--grisoscuro);
+    max-width: 500px;
+    text-align: left;
+    margin: auto;
+    padding: 15px 15px 5px 15px;
+}
+
+.register-form {
+    padding: 5px 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.control-register {
+    margin-bottom: 15px;
+}
+
+.control-register input .etiqueta {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+.box {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.box input:hover,
+.box input:focus,
+.search-input input:focus,
+.search-input input:hover {
+    outline: none;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.control-register input.control:hover {
+    outline: none;
+}
+
+.button-register {
+    background-color: var(--celeste);
+    border: none;
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input:invalid {
+    background-color: rgba(218, 170, 170, 0.815);
+}
+
+input:hover,
+input:focus {
+    outline: var(--amarillo) 2px solid;
+}
+
+
+/* ---------- Fin Formulario Register ----------- */
+
+/* -------- Exclusivos Formulario Login --------- */
+
+.title-log {
+    font-size: 24px;
+    color: var(--grisoscuro);
+    max-width: 500px;
+    text-align: left;
+    margin: auto;
+    padding: 15px 15px 5px 15px;
+}
+
+.login-form {
+    padding: 5px 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.button-login {
+    width: 100%;
+    background-color: var(--celeste);
+    border: none;
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.button-login:hover {
+    background-color: #0022AA;
+}
+
+span {
+    color: red;
+    margin-top: 5px;
+    display: block;
+}
+
+/* ------- Fin Exclusivos Formulario Login ------ */
+
+/* --------------- Media queries ---------------- */
+/* --------- Tablet -------- */
+@media (min-width: 576px) {
+
+    h4 {
+        font-size: 12px;
+    }
+
+    article {
+        margin: 10px 0 10px 0;
+        width: 45%;
+        box-shadow: none;
+        transition: box-shadow 450ms;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px var(--grisoscuro);
+    }
+
+    .header-bar,
+    .main-nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-bar-mobile {
+        width: 65%;
+    }
+
+    .logo {
+        max-width: 165px;
+    }
+
+    .main-nav-bar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-nav-bar li {
+        margin-right: 5px;
+    }
+
+    .motto {
+        text-align: right;
+        font-size: 12px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .products-lastseen,
+    .products-offers {
+        flex-direction: row;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .discount {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+}
+
+/* ----- Fin de Tablet ----- */
+
+/* --------- Desktop ------- */
+@media (min-width: 992px) {
+
+    article {
+        width: 23%;
+    }
+
+    h4 {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    .header-bar-mobile {
+        width: 75%;
+    }
+
+    .logo {
+        max-width: 253px;
+    }
+
+    .motto {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .main-nav-bar li {
+        margin-right: 6px;
+    }
+
+    .product {
+        padding: 15px;
+    }
+
+    .value {
+        text-align: center;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .discount {
+        font-size: 14px;
+    }
+
+    .footer-section {
+        display: flex;
+        margin: auto;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        gap: 15px
+    }
+}
+
+/* ---- Fin de Desktop ----- */
+
+/* ------- Desktop Big ----- */
+
+@media (min-width: 1200px) {
+
+    article {
+        max-width: 288px;
+    }
+
+    .header-bar .main-nav-bar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-nav-bar {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .main-nav-bar li {
+        margin-right: 10px;
+    }
+
+    .main-nav-bar a {
+        font-size: 14px;
+    }
+
+    .motto {
+        font-size: 14px
+    }
+}
+
+/* ---- Fin Desktop Big ---- */
+/* --------------- Fin Media queries ----------- */
